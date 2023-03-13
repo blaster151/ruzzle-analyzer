@@ -103,6 +103,11 @@ boards.forEach((b, i)=> {
             if (i == 1) console.log('board 1', words[1].possibilities.length, words[1].possibilities);
         });
     });
+
+    let newDiv = document.createElement('div');
+    newDiv.innerText = 'Possibilities ' + words[i].possibilities.length;
+    newDiv.style.fontSize = '8px';
+    b.appendChild(newDiv);
 });
 
 console.log(words);
